@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: red;
+    display: flex;
+    gap: 10px;
+}
+.left-div {
+    background-color: yellow;
+    flex: 2;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.aside-div {
+    background-color: blue;
+    flex: 1;
+}
+.left-div__top, .left-div__bottom {
+    display: flex;
+    gap: 10px;
+}
+.left-div__top1 {
+    background-color:bisque;
+    flex: 1;
+} 
+.left-div__bottom2 {
+    flex: 1;
+    background-color:bisque;
+}
+
+/* responsive */
+@media screen and (max-width:700px) {
+    .container {
+        padding: 20px;
+        background-color: rgb(243, 53, 202);
+        flex-direction: column;
+    }
+    .left-div__top {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .left-div__bottom {
+        flex-direction: column;
+    }
+}
